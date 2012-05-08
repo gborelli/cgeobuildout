@@ -1,0 +1,13 @@
+language: python
+python:
+  - "2.6"
+
+install:
+  - python bootstrap.py
+  - bin/buildout -c devel-4.2.cfg
+
+script: bin/test -s collective.geo
+
+notifications:
+  email:
+    - giorgio@giorgioborelli.install
