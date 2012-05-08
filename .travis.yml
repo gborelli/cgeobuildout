@@ -3,6 +3,7 @@ python:
   - "2.6"
 
 install:
+  - apt-get install libgeos_c1 libgeos-dev
   - python bootstrap.py
   - bin/buildout -c devel-4.2.cfg
 
@@ -10,4 +11,4 @@ script: bin/test -s collective.geo
 
 notifications:
   email:
-    - giorgio@giorgioborelli.install
+    - giorgio@giorgioborelli.it
