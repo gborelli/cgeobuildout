@@ -7,7 +7,7 @@ before_install:
 
 install:
   - python bootstrap.py
-  - bin/buildout -c devel-4.2.cfg
+  - bin/buildout -c travis.cfg
 
 script: bin/test -s collective.geo
 
